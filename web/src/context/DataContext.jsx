@@ -5,6 +5,8 @@ export const DataContext = createContext();
 export const DataProvider = ({ children }) => {
   const [ tripsData, setTripsData ] = useState(null);
   const [ deliveriesData, setDeliveriesData ] = useState(null);
+  const [ trucksData, setTrucksData ] = useState(null);
+  const [ driversData, setDriversData ] = useState(null);
 
   const fetchTripsData = async (selectedDate) => {
     try {
@@ -29,12 +31,45 @@ export const DataProvider = ({ children }) => {
     }
   };
 
+  const fetchTrucksData = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/trucks`);
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const data = await response.json();
+      setTrucksData(data);
+    } catch (error) {
+      console.error("Error fetching trucks:", error);
+    }
+  };
+
+  const fetchDriversData = async () => {
+    try {
+      const response = await fetch(`http://localhost:3000/drivers`);
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      const data = await response.json();
+      setDriversData(data);
+    } catch (error) {
+      console.error("Error fetching drivers:", error);
+    }
+  };
+
   useEffect(() => {
-    // fetchTripsData('2024-08-09');
+    fetchTrucksData();
+    fetchDriversData();
   }, []);
 
   return (
-    <DataContext.Provider value={{ tripsData, setTripsData, deliveriesData, setDeliveriesData, fetchTripsData }}>
+    <DataContext.Provider value={{
+      tripsData, setTripsData,
+      deliveriesData, setDeliveriesData,
+      trucksData, setTrucksData,
+      driversData, setDriversData,
+      fetchTripsData, fetchTrucksData, fetchDriversData 
+    }}>
       {children}
     </DataContext.Provider>
   );
