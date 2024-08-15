@@ -25,7 +25,7 @@
   ],
   "trips": [
     { 
-      "2024-08-08": [
+      "2024-08-14": [
         { "11": [
           {
             "id": 1,
@@ -38,6 +38,8 @@
             "initial_s500": 6000,
             "s10_sold": 3800,
             "s500_sold": 5500,
+            "finished": true,
+            "reviewed": false,
             "deliveries": [
               { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
               { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -60,6 +62,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": false,
+              "reviewed": false,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -79,6 +83,8 @@
               "initial_s500": 8000,
               "s10_sold": 2000,
               "s500_sold": 8000,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196461", "request": "", "s10": 0, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "13:30", "final_time": "14:00", "odometer": 115399, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196462", "request": "", "s10": 0, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "14:20", "final_time": "15:10", "odometer": 115424, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -101,6 +107,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -124,6 +132,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": false,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -147,6 +157,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -170,6 +182,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -193,6 +207,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -216,6 +232,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": false,
+              "reviewed": false,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -239,6 +257,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": false,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -250,7 +270,7 @@
           ]
         }
       ],
-      "2024-08-09": [
+      "2024-08-15": [
         { "11": [
           {
             "id": 1,
@@ -263,6 +283,8 @@
             "initial_s500": 6000,
             "s10_sold": 3800,
             "s500_sold": 5500,
+            "finished": true,
+            "reviewed": false,
             "deliveries": [
               { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
               { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -282,6 +304,8 @@
             "initial_s500": 8000,
             "s10_sold": 2000,
             "s500_sold": 8000,
+            "finished": true,
+            "reviewed": false,
             "deliveries": [
               { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196461", "request": "", "s10": 0, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "13:30", "final_time": "14:00", "odometer": 115399, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
               { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196462", "request": "", "s10": 0, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "14:20", "final_time": "15:10", "odometer": 115424, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -303,6 +327,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -322,6 +348,8 @@
               "initial_s500": 8000,
               "s10_sold": 2000,
               "s500_sold": 8000,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196461", "request": "", "s10": 0, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "13:30", "final_time": "14:00", "odometer": 115399, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196462", "request": "", "s10": 0, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "14:20", "final_time": "15:10", "odometer": 115424, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -344,6 +372,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": false,
+              "reviewed": false,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -367,6 +397,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -390,6 +422,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -413,6 +447,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": false,
+              "reviewed": false,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -436,6 +472,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": false,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -459,6 +497,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
@@ -482,6 +522,8 @@
               "initial_s500": 6000,
               "s10_sold": 3800,
               "s500_sold": 5500,
+              "finished": true,
+              "reviewed": true,
               "deliveries": [
                 { "id": 1, "client": "Nome completo do cliente 1", "invoice": "196458", "request": "", "s10": 0, "s10_register": false, "s500": 1000, "s500_register": true, "initial_time": "07:00", "final_time": "07:40", "odometer": 115242, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },
                 { "id": 2, "client": "Nome completo do cliente 2", "invoice": "196459", "request": "", "s10": 2000, "s10_register": false, "s500": 3000, "s500_register": false, "initial_time": "08:00", "final_time": "08:40", "odometer": 115267, "latitude": "-20.608585809409966", "longitude": "-47.25742203280881" },

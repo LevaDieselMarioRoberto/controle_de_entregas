@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { DataContext } from '../context/DataContext';
+import { CheckCircleIcon, InfoOutlineIcon, TimeIcon } from '@chakra-ui/icons'
 import {
   Table,
   Thead,
@@ -8,13 +9,16 @@ import {
   Th,
   Td,
   TableContainer,
+  Box,
+  Text,
+  Tooltip
 } from '@chakra-ui/react'
 
 export default function TripsTable({ tripsData }) {
   const { driversData } = useContext(DataContext);
 
   const findDriverById = (driverId) => {
-    return driversData?.find(driver => driver.id === driverId.toString());
+    return driversData?.find(driver => driver.id == driverId.toString());
   };
 
   return (
@@ -30,6 +34,7 @@ export default function TripsTable({ tripsData }) {
             <Th colSpan="2">Entregue</Th>
             <Th colSpan="2">Retorno</Th>
             <Th rowSpan="2">Odômetro</Th>
+            <Th rowSpan="2">Revisão</Th>
           </Tr>
           <Tr>
             <Th>s10</Th>
@@ -44,7 +49,21 @@ export default function TripsTable({ tripsData }) {
           {tripsData.map((truck, index) => (
             truck.trips.map((trip, tripIndex) => (
               <Tr key={tripIndex}>
-                <Td color="red.500">{truck.truckId}</Td>
+                <Td>
+                  <Box 
+                    bg="red.500"
+                    color="white"
+                    borderRadius="50%"
+                    w="20px"
+                    h="20px"
+                    textAlign="center"
+                    alignContent="center"
+                  >
+                    <Text fontSize="14px">
+                      {truck.truckId}
+                    </Text>
+                  </Box>
+                </Td>
                 <Td>{trip.id}ª</Td>
                 <Td>{findDriverById(trip.driver_id).first_name}</Td>
                 <Td>{trip.initial_time} / {trip.final_time}</Td>
@@ -55,6 +74,23 @@ export default function TripsTable({ tripsData }) {
                 <Td>{trip.initial_s10 - trip.s10_sold}</Td>
                 <Td>{trip.initial_s500 - trip.s500_sold}</Td>
                 <Td>{trip.initial_odometer} / {trip.final_odometer}</Td>
+                <Td>
+                  {trip.finished ? (
+                    trip.reviewed ? (
+                      <Tooltip hasArrow label='Revisado' placement='left' bg='green.600'>
+                        <CheckCircleIcon color="green.500" boxSize={4} />
+                      </Tooltip>
+                    ) : (
+                      <Tooltip hasArrow label='Disponível para revisão' placement='left' bg='blue.600'>
+                        <InfoOutlineIcon color="blue.500" boxSize={4} />
+                      </Tooltip>
+                    )
+                  ) : (
+                    <Tooltip hasArrow label='Viagem em andamento' placement='left' bg='yellow.600'>
+                      <TimeIcon color="yellow.500" boxSize={4} />
+                    </Tooltip>
+                  )}
+                </Td>
               </Tr>
             ))
           ))}

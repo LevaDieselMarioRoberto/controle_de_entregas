@@ -6,7 +6,7 @@ export default function Trucks() {
   const { trucksData, driversData } = useContext(DataContext);
 
   const findDriverById = (driverId) => {
-    return driversData?.find(driver => driver.id === driverId.toString());
+    return driversData?.find(driver => driver.id == driverId.toString());
   };
 
   return (
