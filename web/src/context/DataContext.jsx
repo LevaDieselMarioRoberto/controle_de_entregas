@@ -10,6 +10,9 @@ export const DataProvider = ({ children }) => {
 
   const fetchTripsData = async (selectedDate) => {
     try {
+      setTripsData(null);
+      await new Promise(r => setTimeout(r, 500));
+
       const response = await fetch(`http://localhost:3000/trips`);
       if (!response.ok) {
         throw new Error("Network response was not ok");

@@ -1,4 +1,5 @@
 import { useState, useEffect, useContext } from "react";
+import { Text, Spinner } from '@chakra-ui/react'
 import { DataContext } from "../context/DataContext";
 import DateSelector from "../components/DateSelector";
 import TripsTable from "../components/TripsTable";
@@ -25,10 +26,17 @@ export default function Trips() {
           tripsData.length > 0 ? (
             <TripsTable tripsData={tripsData} />
           ) : (
-            <p>Sem viagens disponíveis na data selecionada</p>
+            <Text mt="50px">Sem viagens registradas na data selecionada</Text>
           )
         ) : (
-          <p>Carregando viagens...</p>
+          <Spinner
+            thickness='2px'
+            speed='0.65s'
+            emptyColor='gray.200'
+            color='red.500'
+            size='lg'
+            mt="50px"
+          />
         )}
       </div>
     </>
