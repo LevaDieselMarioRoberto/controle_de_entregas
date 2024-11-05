@@ -34,7 +34,7 @@ export default function TripsTable({ tripsData }) {
             <Th colSpan="2">Entregue</Th>
             <Th colSpan="2">Retorno</Th>
             <Th rowSpan="2">Odômetro</Th>
-            <Th rowSpan="2">Revisão</Th>
+            <Th rowSpan="2">Status</Th>
           </Tr>
           <Tr>
             <Th>s10</Th>
@@ -60,11 +60,11 @@ export default function TripsTable({ tripsData }) {
                     alignContent="center"
                   >
                     <Text fontSize="14px">
-                      {truck.truckId}
+                      {truck.truck_id}
                     </Text>
                   </Box>
                 </Td>
-                <Td>{trip.id}ª</Td>
+                <Td>{trip.trip}ª</Td>
                 <Td>{findDriverById(trip.driver_id).first_name}</Td>
                 <Td>{trip.initial_time} / {trip.final_time}</Td>
                 <Td>{trip.initial_s10}</Td>

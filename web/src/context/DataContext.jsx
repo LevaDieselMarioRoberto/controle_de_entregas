@@ -21,12 +21,26 @@ export const DataProvider = ({ children }) => {
       const filteredData = data["0"][selectedDate] || [];
 
       const mappedTrips = filteredData.map((truckTrips) => {
-        const truckId = Object.keys(truckTrips)[0];
+        const truck_id = Object.keys(truckTrips)[0];
         return {
-          truckId,
-          trips: truckTrips[truckId],
+          truck_id,
+          trips: truckTrips[truck_id],
         };
       });
+
+      const deliveries = mappedTrips.reduce((acc, truck) => {
+        return [
+          ...acc,
+          ...truck.trips.map((trip) => {
+            return {
+              ...trip,
+              truck_id: truck.truck_id,
+            };
+          }),
+        ];
+      }
+      , []);
+      setDeliveriesData(deliveries);
 
       setTripsData(mappedTrips);
     } catch (error) {
