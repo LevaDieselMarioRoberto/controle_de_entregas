@@ -209,10 +209,6 @@ const styles = StyleSheet.create({
   },
   documentsAndTime: {
     paddingBottom: 5,
-    // marginTop: 10,
-    // borderWidth: 1,
-    // borderRadius: 5,
-    // borderColor: 'gray',
   },
   timeInput: {
     borderWidth: 1,
@@ -226,7 +222,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(0, 255, 0, 0.2)',
+    backgroundColor: 'darkred',
     marginHorizontal: 10,
     marginTop: 10,
     borderRadius: 5,

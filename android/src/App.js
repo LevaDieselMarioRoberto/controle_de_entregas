@@ -17,8 +17,27 @@ export default function App() {
     <PaperProvider theme={CombinedDarkTheme}>
       <NavigationContainer theme={CombinedDarkTheme}>
         <Stack.Navigator initialRouteName='Leva Diesel'>
-          <Stack.Screen name='Leva Diesel' component={Home} />
-          <Stack.Screen name='Nova Entrega' component={DeliveryForm} />
+          <Stack.Screen
+            name='Leva Diesel' 
+            component={Home}
+            options={{
+              title: 'Controle Leva Diesel',
+              headerTitleAlign: 'center',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }}
+          />
+          <Stack.Screen
+            name='Nova Entrega'
+            component={DeliveryForm}
+            options={{
+              headerTitleAlign: 'center',
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              },
+            }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
