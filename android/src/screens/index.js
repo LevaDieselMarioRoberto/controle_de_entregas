@@ -1,2 +1,2 @@
-export { Home } from './Home';
-export { DeliveryForm } from './DeliveryForm';
+export { default as Home } from './Home';
+export { default as DeliveryForm } from './DeliveryForm';

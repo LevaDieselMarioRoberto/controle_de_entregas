@@ -4,7 +4,7 @@ import { ScrollView, View, StyleSheet } from 'react-native';
 import { Checkbox, Text, Divider } from 'react-native-paper';
 import { Input } from '../components';
 
-export function DeliveryForm({navigation}) {
+export default function DeliveryForm({navigation}) {
   const [client, setClient] = useState('');
   const [s10quantity, sets10quantity] = useState(0);
   const [s10DirectDelivery, sets10DirectDelivery] = useState(false);

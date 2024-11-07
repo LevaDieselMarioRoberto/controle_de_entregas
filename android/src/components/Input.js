@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import { TextInput } from 'react-native-paper';
 
-export const Input = ({label, value, setValue, inputMode, multiline, onFocus }) => {
+export default function Input({label, value, setValue, inputMode, multiline, onFocus }) {
   return (
     <TextInput
       style={styles.input}

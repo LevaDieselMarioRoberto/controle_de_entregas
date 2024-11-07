@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { ScrollView, StyleSheet, Text, TouchableHighlight, View } from 'react-native';
+import { StyleSheet, Text, TouchableHighlight, View } from 'react-native';
+import { Footer } from '../components/';
 
-export function Home({navigation}) {
+export default function Home({navigation}) {
 
   return (
     <>
       <StatusBar style="auto" />
+
       <View style={styles.container}>
         <TouchableHighlight
           style={styles.button}
@@ -48,21 +50,23 @@ export function Home({navigation}) {
           <Text style={styles.buttonText}>Localizações</Text>
         </TouchableHighlight>
       </View>
+
+      <Footer />
     </>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    height: '100%',
     alignContent: 'center',
     justifyContent: 'center',
+    marginVertical: 'auto',
     gap: 20,
   },
   button: {
-    backgroundColor: 'darkred',
+    backgroundColor: '#b6272f',
     padding: 20,
-    marginHorizontal: 20,
+    marginHorizontal: 30,
     borderRadius: 10,
     alignItems: 'center',
   },

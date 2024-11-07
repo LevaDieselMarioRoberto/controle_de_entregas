@@ -1,4 +1,5 @@
 import { Home, DeliveryForm } from './screens/';
+import { Header } from './components/';
 import { MD3DarkTheme , adaptNavigationTheme, PaperProvider } from 'react-native-paper';
 import { NavigationContainer, DarkTheme as NavigationDarkTheme } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -18,14 +19,10 @@ export default function App() {
       <NavigationContainer theme={CombinedDarkTheme}>
         <Stack.Navigator initialRouteName='Leva Diesel'>
           <Stack.Screen
-            name='Leva Diesel' 
+            name='Leva Diesel'
             component={Home}
             options={{
-              title: 'Controle Leva Diesel',
-              headerTitleAlign: 'center',
-              headerTitleStyle: {
-                fontWeight: 'bold',
-              },
+              headerTitle: () => <Header />,
             }}
           />
           <Stack.Screen
